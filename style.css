@@ -15,11 +15,38 @@ html {
 
 /* Custom Skill Tag Styling to keep HTML clean */
 .skill-card {
-    @apply bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-md transition-shadow;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px rgba(2,6,23,0.06);
+    border: 1px solid #f1f5f9;
+    transition: box-shadow .2s ease, transform .2s ease;
+}
+
+html.dark .skill-card {
+    background-color: #0f172a; /* approximate slate-800 */
+    border-color: #334155; /* approximate slate-700 */
+}
+
+.skill-card:hover {
+    box-shadow: 0 8px 24px rgba(2,6,23,0.08);
 }
 
 .skill-tag {
-    @apply px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium border border-slate-200 dark:border-slate-600;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: #f1f5f9;
+    color: #334155;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid #e2e8f0;
+}
+
+html.dark .skill-tag {
+    background-color: #334155; /* approximate slate-700 */
+    color: #e2e8f0; /* approximate slate-200 */
+    border-color: #475569; /* approximate slate-600 */
 }
 
 /* Animations */

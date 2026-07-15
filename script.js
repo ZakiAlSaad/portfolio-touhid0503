@@ -40,8 +40,6 @@ const revealOnScroll = () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                // Optional: Stop observing once revealed to only animate once
-                // observer.unobserve(entry.target); 
             }
         });
     }, {
